@@ -23,7 +23,8 @@ app.use(cors(
     {
         origin: ["https://food-bd69.vercel.app","https://food-tofs.vercel.app"],
         methods: ["POST","GET"],
-        credentials: true
+        credentials: true,
+        allowedHeaders: ["Content-Type", "Authorization"]
     }
 ));
 
